@@ -1,12 +1,12 @@
-const Flag = ({ countryInfo }) => {
-  console.log(countryInfo);
+const Flag = ({ name, flag }) => {
+  // console.log(countryInfo);
   return (
     <>
       <div>
-        <h3>{countryInfo[0].name.common}</h3>
+        <h3>{name}</h3>
       </div>
       <div className="flag">
-        <img src={countryInfo[0].flags.png} />
+        <img src={flag} />
       </div>
     </>
   );
